@@ -1,0 +1,10 @@
+<div id="profile" [ngClass]="{'active' :show ,'idle' :!show}">
+    <div id="profile-content">
+        <input #nameInput placeholder="Name">
+        <input #RollNoInput placeholder="Roll No">
+        <input #BranchInput placeholder="Branch">
+        <input #SectionInput placeholder="Section">
+        <textarea #descriptionInput placeHolder = "Your Talents!!"></textarea>
+        <button (click) = "onContinueClick(nameInput, RollNoInput ,BranchInput,SectionInput,descriptionInput)"mat-flat-button>Continue</button>
+    </div>
+    </div>

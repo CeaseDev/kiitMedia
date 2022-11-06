@@ -1,0 +1,31 @@
+.authen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: 1em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.authen-content{
+    width:100% ; 
+    max-width: 30em;
+    pad: 1.5em;
+}
+
+button{
+    margin: .5em ; 
+}
+
+input{
+    width: 100%;
+    padding: 1em;
+    margin:  .5em 0;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(15,15,15,.4);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}

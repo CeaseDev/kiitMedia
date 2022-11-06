@@ -1,0 +1,14 @@
+<div class = "nav-bar">
+    <div class="nav-bar-content">
+        <div class="nav-bar-left">
+                <div style= "font-size: 1.5em;"class="nav-bar-items">KIITMedia</div>
+        </div>
+        <div class ="nav-bar-right">
+                <div *ngIf ="!loggedIn()" (click) = "onloginClick()" class="nav-bar-items">Login</div>
+                <span *ngIf ="loggedIn() && userHasProfile" id = "user-profile" class="nav-bar-items">Hello , {{userDocument.publicName}}</span>
+                <div *ngIf= "loggedIn()"(click) = "onlogOutClick()" class="nav-bar-items">Logout</div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
+<app-profile [show]="loggedIn() && !userHasProfile"></app-profile>
